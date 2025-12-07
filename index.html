@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniCalc</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">MiniCalc</h1>
+
+    <div class="calculator" role="application" aria-label="Calculator">
+      <div class="display">
+        <input id="screen" type="text" inputmode="none" readonly value="0" aria-label="Calculator display" />
+      </div>
+
+      <div class="keys">
+        <!-- row 1 -->
+        <button class="btn op" data-action="clear">C</button>
+        <button class="btn op" data-action="toggle-sign">±</button>
+        <button class="btn op" data-action="percent">%</button>
+        <button class="btn op" data-value="/">÷</button>
+
+        <!-- row 2 -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn op" data-value="*">×</button>
+
+        <!-- row 3 -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn op" data-value="-">−</button>
+
+        <!-- row 4 -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn op" data-value="+">+</button>
+
+        <!-- row 5 -->
+        <button class="btn wide" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn equal" data-action="equals">=</button>
+
+        <!-- extra row for sqrt and parentheses -->
+        <div class="extra-row">
+          <button class="btn op" data-action="sqrt">√</button>
+          <button class="btn op" data-value="(">(</button>
+          <button class="btn op" data-value=")">)</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <small>Static calculator — deploy on GitHub Pages</small>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
